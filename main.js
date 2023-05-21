@@ -51,24 +51,26 @@ const products = [{
     price: 500,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-MrfC8OiqiLpF2l8TxcVe15_0Eq_M_-EIaA&usqp=CAU",
     description: "Una computadora de ultima gama, con 8GB de RAM entre otras cosas de utilidad.",
-    id:"pc"
 },{
     name:"Bicicleta",
     price: 240,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfapCzny1hUz5JJg_Ds3JvyPlPYLwQGcNSFg&usqp=CAU",
-    description: "Una Bicicleta de marca Montagne, original, y de muy buena calidad.",
-    id:"bike"
+    description: "Una Bicicleta de marca Montagne, original, y de muy buena calidad.", 
 },{
     name: "Pelota",
     price: 100,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqDOkYOA9tAb0PNt6N_DtbZTb0WHf_kvqklw&usqp=CAU",
     description: "Una pelota tamaño GX7, de marca Molten, de muy buena calidad.",
-    id:"ball"
+},{
+    name: "Libro",
+    price: 300,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6C2uOcPpZ1vWD5mahby8BjeUlgO0weU13g&usqp=CAU",
+    description: "Libro de don Quijote de La Mancha original, lo tuvo el en sus manos.",
 }];
 
  function changeInfoProfuct(element){
     productInfoImg.setAttribute("src", element.image);
-    price.innerHTML = element.price
+    price.innerHTML ="$" + element.price
     nombre.innerHTML = element.name
     descripcion.innerHTML = element.description;
     productoEspecifico.classList.remove("inactive")
