@@ -1,3 +1,5 @@
+@import url("variables.css");
+
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -6,9 +8,8 @@
     --hospital-green: #ACD9B2;
     --sm: 14px;
     --md: 16px;
-    --lg: 18px;
-  }
-
+    --lg: 18px;  
+}
 .inactive{
     display: none;
 }
@@ -119,6 +120,8 @@ nav {
     margin-bottom: 20px;
     display: inline-block;
 }
+
+
 @media (min-width: 641px) {
     .mobile-menu{
         display: none;
