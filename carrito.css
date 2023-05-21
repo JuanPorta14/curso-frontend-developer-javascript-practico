@@ -16,12 +16,14 @@
 
 .product-detail {
     width: 360px;
-    padding: 0 6px;
+    padding: 9px 6px;
     box-sizing: border-box;
     position: absolute;
     right: 0;
     top: 60.5px;
     background: var(--white);
+    z-index: 100;
+    position: fixed;
 
   }
 .title-container {

@@ -20,11 +20,17 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 26px;
     border-bottom: 1px solid var(--very-light-pink);
+    position: fixed;
+    z-index: 100;
+    background: var(--white);
+    width: 96%;
+    
 }
 .menu {
     display: none;
+    cursor:pointer;
 }
 .logo {
     width: 100px;
@@ -67,6 +73,8 @@ nav {
 .navbar-shopping-cart {
     position: relative;
     user-select: none;
+    cursor: pointer;
+    
 }
 .navbar-shopping-cart div {
     width: 16px;
@@ -139,17 +147,26 @@ nav {
       display: block;
       cursor: pointer;
     }
+    .navbar-shopping-cart{
+        margin-right: 20px;
+    }
     .navbar-left ul {
       display: none;
+      width: 95%;
     }
     .navbar-email {
       display: none;
+      width: 95%;
     }
     .mobile-menu {
         position: absolute;
         padding: 24px;
         left: 0;
         top: 60.5px;
+        background: var(--white);
+        height: 100vh;
+        z-index: 100;
+        position: fixed;
 
     }
     .mobile-menu a {
